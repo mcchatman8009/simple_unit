@@ -1,3 +1,4 @@
+// @formatter:off
 // Simple Unit
 #ifndef HEADER_ONLY_SIMPLE_UNIT_H
 #define HEADER_ONLY_SIMPLE_UNIT_H
@@ -18,4 +19,4 @@
 #define assert_not_eq(lhs,rhs){if((lhs==rhs)){printf("[FAILED]\n");fprintf(stdout," assert_not_eq(%s,%s);\n",#lhs,#rhs);}else{printf("");} test_assert(lhs!=rhs);} NULL
 #define assert_eq(lhs,rhs){if((lhs!=rhs)){printf("[FAILED]\n");fprintf(stdout," assert_eq(%s,%s);\n",#lhs,#rhs);}else{printf("");} test_assert(lhs==rhs);} NULL
 #endif
-
+// @formatter:on
